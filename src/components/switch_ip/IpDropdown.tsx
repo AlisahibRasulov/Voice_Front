@@ -10,14 +10,14 @@ const IpDropdown = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-    
-  return (
-    <div className="dropdown border border-slate-800 w-52 h-72 overflow-scroll bg-slate-400">
 
-<button onClick={toggleDropdown}>Dropdown</button>
+  return (
+    <div className="dropdown">
+
+<button className='border border-sky-600 w-44 h-10 rounded-[5px]' onClick={toggleDropdown}>Dropdown</button>
       {isOpen && (
-        <div className="dropdown-content">
-          <a href="#">
+        <div className="dropdown-content border border-slate-800 w-44 h-96 mt-5 overflow-scroll">
+          <a href="#" className='text-[17px]'>
           {ipData.map((item)=>(
             <IpAdress
             key={item.id} ip={item}
