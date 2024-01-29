@@ -1,10 +1,8 @@
 export interface ISwitchIp {
     id:string;
     ip_address:string;
-    area:{
-      name:string;
-      prefix:string;
-    };
+    ip_address_label: string;
+  
   };
 
 
